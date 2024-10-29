@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
+            <div id="deu_ruim"></div>
+            <div id="deu_bom"></div>
+            <div class="">
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <label id="label_nome" for="nome"></label>
+            </div>
+            <div class="">
+                <input type="text" id="usuario" placeholder="Digite seu usuário">
+                <label id="label_usuario" for="usuario"></label>
+            </div>
+            <div class="">
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <label id="label_senha" for="senha"></label>
+            </div>
+            <div class="">
+                <input type="password" id="cfm_senha" placeholder="Confirme sua senha">
+                <label id="label_cfm_senha" for="cfm_senha"></label>
+            </div>
+            <div class="">
+            <button type="button" id="bt_senha">👁️</button>
+             </div>
+             <div class="">
+            <button type="button" id="bt_cfm_senha">👁️</button>
+        </div>
+            <div>
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/cadastro.js"></script>
+</body>
+</html>
