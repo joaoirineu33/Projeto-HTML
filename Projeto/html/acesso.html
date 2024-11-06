@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/acesso.css">
+    <title>Acesso</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            
+            <h1>Login</h1>
+
+            <div id="deu_ruim"></div>
+            
+            <div id="deu_bom"></div>
+            
+            <div class="label_float">
+                <input type="text" id="usuario" required>
+                <label for="usuario"> usuário </label>
+            </div>
+           
+            <div class="label_float">
+                <input type="password" id="senha" required>
+                <label id="label_senha" for="senha"> senha </label>
+                <i class="fa fa-eye" type="button" aria-hidden="true" id="bt_senha"></i>
+            </div>
+           
+            <div class="justify_center">
+                <button onclick="login()">Entrar</button>
+            </div>
+            
+            <div class="justify_center">
+               <hr>
+            </div>
+            <p>
+                Não tem uma conta?
+                <a href="./cadastro.html">Cadastre-se</a>
+            </p>
+        
+        </div>
+    </div>
+    <script src="../javascript/acesso.js"></script>
+</body>
+</html>

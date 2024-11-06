@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            
+            <h1>Cadastrar</h1>
+            
+            <div id="deu_ruim"></div>
+            
+            <div id="deu_bom"></div>
+            
+            <div class="label_float">
+                <input type="text" id="nome" required>
+                <label id="label_nome" for="nome"> nome </label>
+            </div>
+           
+            <div class="label_float">
+                <input type="text" id="usuario" required>
+                <label id="label_usuario" for="usuario"> usuário </label>
+            </div>
+            
+            <div class="label_float">
+                <input type="password" id="senha" required>
+                <label id="label_senha" for="senha"> senha </label>
+                <i class="fa fa-eye" type="button" aria-hidden="true" id="bt_senha"></i>
+            </div>
+            
+            <div class="label_float">
+                <input type="password" id="cfm_senha" required> 
+                <label id="label_cfm_senha" for="cfm_senha"> confirme a senha </label>
+                <i class="fa fa-eye" type="button" aria-hidden="true" id="bt_cfm_senha"></i>
+            <div class="justify_center">
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+            
+            <a href="acesso.html"> voltar para login </a>
+
+        </div>
+    </div>
+    <script src="../javascript/cadastro.js"></script>
+</body>
+</html>
